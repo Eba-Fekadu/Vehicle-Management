@@ -72,7 +72,7 @@ export default function Setting({}: SettingProps): ReactElement {
     handleShowListings()
   }, [])
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     dispatch(setFormData({ [e.target.id]: e.target.value }))
   }
   const handleReturn = () => {
